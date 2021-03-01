@@ -9,6 +9,16 @@ public class Car extends Vehicle {
 	private int speed;
 
 
+
+
+	public Car(String doors, String engine, String driver, int speed) {
+
+		this.doors = doors;
+		this.engine = engine;
+		this.driver = driver;
+		this.speed = speed;
+	}
+
 	public String getDoors() {
 		return doors;
 	}
