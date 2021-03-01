@@ -1,2 +1,2 @@
 # Java-Data-structures-and-Algorithms
-Java Coding
+Java Coding HandsOn practice
