@@ -7,8 +7,8 @@ public class Car extends Vehicle {
 	private String engine;
 	private String driver;
 	private int speed;
-	
-	
+
+
 	public String getDoors() {
 		return doors;
 	}
@@ -33,9 +33,24 @@ public class Car extends Vehicle {
 	public void setSpeed(int speed) {
 		this.speed = speed;
 	}
-	
-	
-	
-	
-	
+
+	public String run() {
+
+		if(doors.equals("closed") && engine.equals("on") && driver.equals("seated") && speed>0) {
+			return "Car is running";
+		}
+		else {
+			return "Car is not running";
+
+		}
+	}
+	@Override
+	public String toString() {
+		return "Car [doors=" + doors + ", engine=" + engine + ", driver=" + driver + ", speed=" + speed + "]";
+	}
+
+
+
+
+
 }
